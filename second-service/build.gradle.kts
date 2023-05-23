@@ -3,7 +3,7 @@ plugins {
     application
 }
 
-group = "org.example"
+group = "second.service"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -11,6 +11,7 @@ repositories {
 }
 
 dependencies {
+    implementation(project(":shared"))
     testImplementation(kotlin("test"))
 }
 
